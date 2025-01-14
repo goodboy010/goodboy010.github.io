@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>hexo搭建1</title>
+      <link href="/posts/6611e2c5.html"/>
+      <url>/posts/6611e2c5.html</url>
+      
+        <content type="html"><![CDATA[<p>1.安装<a href="https://nodejs.org/en/download/">Node.js 官网</a><br>2.安装<a href="https://git-scm.com/downloads">Git 官网</a></p><h2 id="检验软件是否安装成功"><a href="#检验软件是否安装成功" class="headerlink" title="检验软件是否安装成功"></a>检验软件是否安装成功</h2><p>修改npm源。npm下载各种模块，默认是从国处服务器下载，速度较慢，建议配置成淘宝镜像。打开CMD窗口，运行如下命令:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https://registry.npmmirror.com</span><br></pre></td></tr></table></figure><p>同时按下 Win 键和 R 键打开运行窗口,输入 <code>cmd</code> ，然后输入以下命令，有相应版本信息显示则安装成功，若不正确可以卸载软件重新安装。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git --version  </span><br><span class="line">node -v  </span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure><h2 id="Hexo-安装"><a href="#Hexo-安装" class="headerlink" title="Hexo 安装"></a>Hexo 安装</h2><p>选择一个磁盘，新建一个文件夹，自己重命名文件夹（如：我的文件夹为：F\Blog），博客相关文件将储存在此文件夹下，在该文件夹下右键鼠标，点击 Git Bash Here，输入以下 npm 命令即可安装,第一次可能需要久一点输入命令后等一等，再输入第二条命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure><p>这个命令表示安装 hexo 的脚手架，如图所示即为安装成功<a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/blog-construct/7.png"><img src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/blog-construct/7.png"></a></p><h2 id="Hexo-初始化配置如："><a href="#Hexo-初始化配置如：" class="headerlink" title="Hexo 初始化配置如："></a>Hexo 初始化配置如：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">npx hexo init</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:goodboy010/goodboy010.github.io.git</span><br><span class="line">  branch: main</span><br><span class="line"></span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>第一个命令，如图所示则安装成功如果失败了就再输入一次，<del>比如说我就错了</del> ，第二个命令表示安装 hexo 部署到 git page 的 deployer<br><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/blog-construct/8.png"><img src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/blog-construct/8.png"></a><br>Hexo 安装完成后，将会在指定文件夹中新建所需要的文件，Hexo 文件夹下的目录如下：<br><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/blog-construct/9.png"><img src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/blog-construct/9.png"></a></p><h2 id="本地查看效果"><a href="#本地查看效果" class="headerlink" title="本地查看效果"></a>本地查看效果</h2><p>执行以下命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate  </span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure><p>执行完即可登录 <a href="http://localhost:4000/">http://localhost:4000/</a> 查看效果</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo系列 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo博客笔记写作</title>
       <link href="/posts/ea687187.html"/>
       <url>/posts/ea687187.html</url>
