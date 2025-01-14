@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>hexo卸载3</title>
+      <link href="/posts/1719a26b.html"/>
+      <url>/posts/1719a26b.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="在Windows系统中："><a href="#在Windows系统中：" class="headerlink" title="在Windows系统中："></a>在Windows系统中：</h3><ol><li>打开命令提示符（CMD）或PowerShell。</li><li>卸载Hexo全局模块： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall -g hexo</span><br></pre></td></tr></table></figure></li><li>如果你想要删除Hexo的项目文件夹，可以手动删除你创建的Hexo项目目录。</li></ol><h3 id="清理残留文件："><a href="#清理残留文件：" class="headerlink" title="清理残留文件："></a>清理残留文件：</h3><p>如果你想要彻底清理Hexo，可能还需要删除node_modules文件夹和<code>package-lock.json</code>文件（如果你在项目中使用了npm）：</p><ol><li>进入你的Hexo项目目录。</li><li>删除<code>node_modules</code>文件夹：    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -rf node_modules</span><br></pre></td></tr></table></figure></li><li>删除<code>package-lock.json</code>文件： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> package-lock.json</span><br></pre></td></tr></table></figure>请注意，这些步骤将从你的系统中移除Hexo，但不会删除你的博客文章和数据。如果你的博客文章存储在Hexo项目目录中，确保在卸载之前备份这些文件。如果你使用的是外部服务（如GitHub Pages）来托管静态文件，那么这些文件应该是安全的。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo系列 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo自动化部署以及部署qexo3</title>
       <link href="/posts/3beddf31.html"/>
       <url>/posts/3beddf31.html</url>
