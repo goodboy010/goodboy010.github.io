@@ -4,13 +4,52 @@
   
     
     <entry>
-      <title>Hello World</title>
+      <title>hexo博客笔记写作</title>
       <link href="/posts/undefined.html"/>
       <url>/posts/undefined.html</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="写作命令"><a href="#写作命令" class="headerlink" title="写作命令"></a>写作命令</h1><p><code>hexo n &quot;文章标题&quot;</code></p><h2 id="Page-Front-matter-用于-页面-配置"><a href="#Page-Front-matter-用于-页面-配置" class="headerlink" title="Page Front-matter 用于 页面 配置"></a>Page Front-matter 用于 <code>页面</code> 配置</h2><table><thead><tr><th>参数</th><th>解释</th></tr></thead><tbody><tr><td>title</td><td>【必需】页面标题</td></tr><tr><td>date</td><td>【必需】页面创建日期</td></tr><tr><td>type</td><td>【必需】标签、分类和友情链接三个页面需要配置</td></tr><tr><td>updated</td><td>【可选】页面更新日期</td></tr><tr><td>description</td><td>【可选】页面描述</td></tr><tr><td>keywords</td><td>【可选】页面关键字</td></tr><tr><td>comments</td><td>【可选】显示页面评论模块 (默认 true)</td></tr><tr><td>top_img</td><td>【可选】页面顶部图片</td></tr><tr><td>mathjax</td><td>【可选】显示 mathjax (当设置 mathjax 的 per_page: false 时，才需要配置，默认 false)</td></tr><tr><td>katex</td><td>【可选】显示 katex (当设置 katex 的 per_page: false 时，才需要配置，默认 false)</td></tr><tr><td>aside</td><td>【可选】显示侧边栏 (默认 true)</td></tr><tr><td>aplayer</td><td>【可选】在需要的页面加载 aplayer 的 js 和 css,请参考文章下面的<code>音乐</code> 配置</td></tr><tr><td>highlight_shrink</td><td>【可选】配置代码框是否展开 (true&#x2F;false) (默认为设置中 highlight_shrink 的配置)</td></tr><tr><td>random</td><td>【可选】配置友情链接是否随机排序（默认为 false）</td></tr><tr><td>limit</td><td>【可选】配置説説显示数量</td></tr><tr><td>limit.type</td><td>【可选】配置説説显示数量的类型 （date 或者 num）</td></tr><tr><td>limit.value</td><td>【可选】配置説説显示数量的值</td></tr></tbody></table><h1 id="Post-Front-matter-用于-文章页-配置"><a href="#Post-Front-matter-用于-文章页-配置" class="headerlink" title="Post Front-matter 用于 文章页 配置"></a>Post Front-matter 用于 <code>文章页</code> 配置</h1><table><thead><tr><th>写法</th><th>解释</th></tr></thead><tbody><tr><td>title</td><td>【必需】文章标题</td></tr><tr><td>date</td><td>【必需】文章创建日期</td></tr><tr><td>updated</td><td>【可选】文章更新日期</td></tr><tr><td>tags</td><td>【可选】文章标签</td></tr><tr><td>categories</td><td>【可选】文章分类</td></tr><tr><td>keywords</td><td>【可选】文章关键字</td></tr><tr><td>description</td><td>【可选】文章描述</td></tr><tr><td>top_img</td><td>【可选】文章顶部图片</td></tr><tr><td>cover</td><td>【可选】文章缩略图(如果没有设置 top_img,文章页顶部将显示缩略图，可设为 false&#x2F;图片地址&#x2F;留空)</td></tr><tr><td>comments</td><td>【可选】显示文章评论模块(默认 true)</td></tr><tr><td>toc</td><td>【可选】显示文章 TOC(默认为设置中 toc 的 enable 配置)</td></tr><tr><td>toc_number</td><td>【可选】显示 toc_number(默认为设置中 toc 的 number 配置)</td></tr><tr><td>toc_style_simple</td><td>【可选】显示 toc 简洁模式</td></tr><tr><td>copyright</td><td>【可选】显示文章版权模块(默认为设置中 post_copyright 的 enable 配置)</td></tr><tr><td>copyright_author</td><td>【可选】文章版权模块的<code>文章作者</code></td></tr><tr><td>copyright_author_href</td><td>【可选】文章版权模块的<code>文章作者</code>链接</td></tr><tr><td>copyright_url</td><td>【可选】文章版权模块的<code>文章连结</code>链接</td></tr><tr><td>copyright_info</td><td>【可选】文章版权模块的<code>版权声明</code>文字</td></tr><tr><td>mathjax</td><td>【可选】显示 mathjax(当设置 mathjax 的 per_page: false 时，才需要配置，默认 false )</td></tr><tr><td>katex</td><td>【可选】显示 katex (当设置 katex 的 per_page: false 时，才需要配置，默认 false )</td></tr><tr><td>aplayer</td><td>【可选】在需要的页面加载 aplayer 的 js 和 css,请参考文章下面的<code>音乐</code> 配置</td></tr><tr><td>highlight_shrink</td><td>【可选】配置代码框是否展开(true&#x2F;false)(默认为设置中 highlight_shrink 的配置)</td></tr><tr><td>aside</td><td>【可选】显示侧边栏 (默认 true)</td></tr><tr><td>abcjs</td><td>【可选】加载 abcjs (当设置 abcjs 的 per_page: false 时，才需要配置，默认 false )</td></tr><tr><td>noticeOutdate</td><td>【可选】文章过期提醒 (默认为设置中 noticeOutdate 的 enable 配置)</td></tr></tbody></table><p>写作结束</p>]]></content>
       
       
+      <categories>
+          
+          <category> hexo系列 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>github加速方法</title>
+      <link href="/posts/undefined.html"/>
+      <url>/posts/undefined.html</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>官方下载地址：<a href="https://steampp.net/">瓦特工具箱(Steam++官网) - Watt Toolkit</a></p></li><li><p>开源仓库：<a href="https://kkgithub.com/521xueweihan/GitHub520">521xueweihan&#x2F;GitHub520: :kissing_heart: 让你“爱”上 GitHub，解决访问时图裂、加载慢的问题。（无需安装）</a></p></li><li><p>Xbox下载加速器：<a href="https://kkgithub.com/skydevil88/XboxDownload">skydevil88&#x2F;XboxDownload: Xbox下载助手，支持Xbox、微软商店、PS、NS、EA app &amp; Origin、战网、Epic、育碧、Riot Games下载加速，修复Steam商店社区、GitHub访问。</a></p></li><li><p>一行命令上GitHub的仓库： <a href="https://kkgithub.com/feng2208/github-hosts">feng2208&#x2F;github-hosts: 加速github，听spotify无限切歌。</a></p></li><li><p>在GitHub前面加kk即可访问：<a href="https://kkgithub.com/">github主页</a></p></li><li><p><a href="https://github.com/SpaceTimee/Sheas-Cealer">SpaceTimee&#x2F;Sheas-Cealer: Just Ceal It (可用于无代理合法抵御网络监听和开展网络研究)</a></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo系列 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> github </tag>
+            
+            <tag> 节点 </tag>
+            
+        </tags>
       
     </entry>
     
